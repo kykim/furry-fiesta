@@ -2,9 +2,7 @@
   export let bannerData = {};
   const { HEADING, DECRIPTION, TUTORIAL_URL, WATCH_TUTORIAL } = bannerData;
 </script>
-<!------------------------------------------->
-<!----------------MARKUP----------------------->
-<!------------------------------------------->
+
 <section class="main-bgcolor light-color" id="banner">
   <div class="container">
     <div class="row">
@@ -17,15 +15,13 @@
         </a>
       </div>
       <div class="col-md-6">
-        <img src="images/home.png" alt="" class="img-fluid" />
+        <img src="images/home.png" alt="" class="img-fluid rounded-circle" />
       </div>
     </div>
   </div>
   <img src="images/wave1.png" alt="" class="wave-img" />
 </section>
-<!------------------------------------------->
-<!----------------STYLE----------------------->
-<!------------------------------------------->
+
 <style>
   section {
     padding-top: 5%;
@@ -46,6 +42,11 @@
 
   section a {
     text-decoration: none;
+  }
+
+  .rounded-circle {
+    border-radius: 50% !important;
+    margin: 90px 20px;
   }
 
   .wave-img {

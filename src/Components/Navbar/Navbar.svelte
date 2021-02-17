@@ -3,14 +3,14 @@
   export let header;
   console.log(navlists);
 </script>
-<!------------------------------------------->
-<!----------------MARKUP----------------------->
-<!------------------------------------------->
+
 <section id="nav-bar">
   <nav class="navbar main-bgcolor navbar-expand-md navbar-dark">
     <a class="navbar-brand company_brand" href="/">
-      {header}
+      <img class="navbar-img" src="images/kasheesh.png" alt="logo" />
+      KASHEESH
     </a>
+    
     <button
       class="navbar-toggler"
       type="button"
@@ -21,6 +21,7 @@
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" />
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         {#each navlists as list}
@@ -32,9 +33,7 @@
     </div>
   </nav>
 </section>
-<!------------------------------------------->
-<!----------------STYLE----------------------->
-<!------------------------------------------->
+
 <style>
   #nav-bar {
     position: sticky;
@@ -43,7 +42,7 @@
   }
 
   .navbar {
-    padding: 0 20px !important;
+    padding: 0 40px !important;
   }
 
   .navbar-nav li {
@@ -55,5 +54,10 @@
     text-transform: uppercase;
     float: right;
     text-align: left;
+  }
+
+  .navbar-img {
+    width: 40px;
+    height: 40px;
   }
 </style>

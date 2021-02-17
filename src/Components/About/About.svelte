@@ -18,7 +18,7 @@
         </ul>
       </div>
       <div class="col-md-6">
-        <img src={IMAGE_URL} alt="" class="img-fluid" />
+        <img src={IMAGE_URL} alt="" class="img-fluid rounded-circle" />
       </div>
     </div>
   </div>

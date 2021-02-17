@@ -1,11 +1,8 @@
 <script>
   export let serviceData = {};
-  const { HEADING, ALL_SERVICES, SERVICE_LIST } = serviceData;
+  const { HEADING, SERVICE_LIST } = serviceData;
 </script>
 
-<!------------------------------------------->
-<!----------------MARKUP----------------------->
-<!------------------------------------------->
 <section id="services" class="section">
   <div class="container text-center">
     <h2 class="title">{HEADING}</h2>
@@ -18,16 +15,12 @@
         </div>
       {/each}
     </div>
-    <buttom class="btn btn-primary round-border main-bgcolor">
-      {ALL_SERVICES}
-    </buttom>
   </div>
 </section>
-<!------------------------------------------->
-<!----------------STYLE----------------------->
-<!------------------------------------------->
+
 <style>
   .service-img {
+    border-radius: 50% !important;
     width: 200px;
     height: 200px;
     margin-top: 20px;
