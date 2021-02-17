@@ -46,7 +46,7 @@
 
   .rounded-circle {
     border-radius: 50% !important;
-    margin: 90px 20px;
+    margin: 20px;
   }
 
   .wave-img {

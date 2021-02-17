@@ -59,10 +59,10 @@
           </li>
         {:else}
           <li class="nav-item">
-            <button on:click={() => signup()}>Signup</button>
+            <button class="btn btn-primary" on:click={() => signup()}>Signup</button>
           </li>
           <li class="nav-item">
-            <button on:click={() => login()}>Login</button>
+            <button class="btn btn-info" on:click={() => login()}>Login</button>
           </li>
         {/if}
       </ul>
@@ -75,6 +75,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
+    width: 100%;
   }
 
   .navbar {
