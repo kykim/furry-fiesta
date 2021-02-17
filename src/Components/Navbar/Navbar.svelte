@@ -86,7 +86,7 @@
     padding: 0 0 0 20px;
   }
 
-  .navbar-nav li a {
+  .navbar-nav li a, button {
     font-weight: 600;
     text-transform: uppercase;
     float: right;
