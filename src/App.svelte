@@ -7,13 +7,12 @@
   import Social from "./Components/Social/Social.svelte";
   import Footer from "./Components/Footer/Footer.svelte";
   import DATA from "./Data/data";
-  console.log(DATA);
 </script>
 
 <!-- Navbar -->
 <Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
 <!-- Banner -->
-<Banner bannerData={DATA.BANNER_DATA} } />
+<Banner bannerData={DATA.BANNER_DATA} />
 <!-- Services -->
 <Services serviceData={DATA.SERVICE_DATA} />
 <!-- About -->

@@ -1,8 +1,10 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import replace from '@rollup/plugin-replace';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
+import includeEnv from "svelte-environment-variables";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -14,7 +16,11 @@ export default {
 		name: 'app',
 		file: 'public/build/bundle.js'
 	},
-	plugins: [
+        plugins: [
+                replace({
+                    ...includeEnv(),
+                }),
+            
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
@@ -34,7 +40,7 @@ export default {
 			browser: true,
 			dedupe: importee => importee === 'svelte' || importee.startsWith('svelte/')
 		}),
-		commonjs(),
+	        commonjs(),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

@@ -1,7 +1,30 @@
 <script>
   export let navlists = [];
-  export let header;
-  console.log(navlists);
+
+  import { createAuth } from '../../auth';
+
+  const auth0config = {
+    domain: process.env.SVELTE_APP_AUTH0_DOMAIN,
+    client_id: process.env.SVELTE_APP_AUTH0_CLIENT_ID,
+  };
+
+  const {
+    isLoading,
+    isAuthenticated,
+    login,
+    logout,
+    authToken,
+    authError,
+    userInfo
+  } = createAuth(auth0config);
+
+  $: state = {
+    isLoading: $isLoading,
+    isAuthenticated: $isAuthenticated,
+    authError: $authError,
+    userInfo: $userInfo ? $userInfo.name : null,
+    authToken: $authToken.slice(0, 20)
+  };
 </script>
 
 <section id="nav-bar">
@@ -29,6 +52,18 @@
             <a class="nav-link light-color" href={list.url}>{list.label}</a>
           </li>
         {/each}
+        {#if $isAuthenticated}
+          <li class="nav-item">
+            <button on:click={() => logout()}>Logout</button>
+          </li>
+        {:else}
+          <li class="nav-item">
+            <a class="nav-link light-color" href="#">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <button on:click={() => login()}>Login</button>
+          </li>
+        {/if}
       </ul>
     </div>
   </nav>
