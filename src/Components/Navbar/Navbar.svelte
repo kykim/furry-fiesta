@@ -11,6 +11,7 @@
   const {
     isLoading,
     isAuthenticated,
+    signup,
     login,
     logout,
     authToken,
@@ -58,7 +59,7 @@
           </li>
         {:else}
           <li class="nav-item">
-            <a class="nav-link light-color" href="#">Sign Up</a>
+            <button on:click={() => signup()}>Signup</button>
           </li>
           <li class="nav-item">
             <button on:click={() => login()}>Login</button>

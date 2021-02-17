@@ -68,6 +68,12 @@ function createAuth(config) {
     };
   });
 
+  const signup = async redirectPage => {
+    await auth0.loginWithRedirect({
+      screen_hint: 'signup'
+    });
+  };
+
   // Provide a redirect page if you need.
   // It must be whitelisted in Auth0. I think.
   const login = async redirectPage => {
@@ -88,6 +94,7 @@ function createAuth(config) {
     isAuthenticated,
     authToken,
     authError,
+    signup,  
     login,
     logout,
     userInfo
