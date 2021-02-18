@@ -2,9 +2,6 @@
   export let testimonialData = {};
   const { HEADING, TESTIMONIAL_LIST } = testimonialData;
 </script>
-<!------------------------------------------->
-<!----------------MARKUP----------------------->
-<!------------------------------------------->
 
 <section id="testimonials" class="section">
   <div class="container">
@@ -17,19 +14,16 @@
           <p class="user-details">
             <b>{list.NAME}</b>
             <br />
-            {list.DESIGNATION}
           </p>
         </div>
       {/each}
     </div>
   </div>
 </section>
-<!------------------------------------------->
-<!----------------STYLE----------------------->
-<!------------------------------------------->
+
 <style>
   .testimonial {
-    border-left: 4px solid #0072ff80;
+    border-left: 4px solid #79c2af;
     margin-top: 10px;
     margin-bottom: 10px;
   }

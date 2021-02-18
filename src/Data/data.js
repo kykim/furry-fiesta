@@ -1,11 +1,10 @@
 const HEADER = "Kasheesh";
 
 const NAVBAR_DATA = [
-  { id: 1, url: "/", label: "Home" },
-  { id: 2, url: "#services", label: "Services" },
-  { id: 3, url: "#about-us", label: "About us" },
-  { id: 4, url: "#testimonials", label: "Testimonials" },
-  { id: 5, url: "#footer", label: "Contacts" }
+  { id: 1, url: "#services", label: "Services" },
+  { id: 2, url: "#about-us", label: "About" },
+  { id: 3, url: "#testimonials", label: "Testimonials" },
+  { id: 4, url: "#footer", label: "Contact" }
 ];
 
 const BANNER_DATA = {
@@ -23,19 +22,19 @@ const SERVICE_DATA = {
     {
       LABEL: "Combine your credit",
       DESCRIPTION:
-        "To customise the content, technical functionality and scope of your website so that your pages show for a specific set of keyword at the top of a search engine list. In the end, the goal is to attract traffic to your website when they are searching for goods, services or business-related information.",
+        "Tired of not being able to purchase online due to credit card limits? What if you could combine the credit of all your cards into one? With Kasheesh, we provide you with the ability to leverage the combined limit of all your credit cards.",
       URL: "images/service1.png"
     },
     {
       LABEL: "No messy applications",
       DESCRIPTION:
-        "It is tough but well worth the effort to create clever material that is not promotional in nature, but rather educates and inspires. It lets them see you as a reliable source of information by delivering content that is meaningful to your audience.",
+        "No need for applying for a new credit card or personal loan. No credit checks required. This is not a new credit card. This is using your existing credit. We don't do messy applications or credit checks. We simply use the credit you already have.",
       URL: "images/service2.png"
     },
     {
-      LABEL: "Shop Online",
+      LABEL: "Online Shopping",
       DESCRIPTION:
-        "Many People rely on social networks to discover, research, and educate themselves about a brand before engaging with that organization. The more your audience wants to engage with your content, the more likely it is that they will want to share it.",
+        "What if you could spread you online purchases across all your credit cards? You can! That's what Kasheesh empowers you to do. Just sign up and use all your exisiting credit cards at once, for all your online purchasing.",
       URL: "images/service3.png"
     }
   ]
@@ -54,21 +53,19 @@ const ABOUT_DATA = {
 };
 
 const TESTIMONIAL_DATA = {
-  HEADING: "What clients say?",
+  HEADING: "What do clients say?",
   TESTIMONIAL_LIST: [
     {
       DESCRIPTION:
-        "Kasheesh has made a huge difference to my ability to shop online. I'm able to use all my credit cards to get the goods I need.",
+        "Kasheesh has made a huge difference to my ability to shop online. I'm able to use all my credit cards to get the goods I need. Thank goodness for Kasheesh.",
       IMAGE_URL: "images/user1.jpg",
-      NAME: "Julia hawkins",
-      DESIGNATION: ""
+      NAME: "Julia Hawkins",
     },
     {
       DESCRIPTION:
-        "Kasheesh made it easy to use all my credit cards at once to buy the high ticket items I needed right away. No messy applications. Fast easy and simple.",
+        "Kasheesh made it easy to use all my credit cards at once to buy the high ticket items I needed right away. No messy applications. Fast, easy and simple.",
       IMAGE_URL: "images/user2.jpg",
       NAME: "John Smith",
-      DESIGNATION: ""
     }
   ]
 };
@@ -88,11 +85,11 @@ const FOOTER_DATA = {
     "We are focused on letting you, our customer, spend the credit you already have in your wallet.",
   CONTACT_DETAILS: {
     HEADING: "Contact us",
-    ADDRESS: "18 Greene Ln, White Plains, NY",
+    ADDRESS: "18 Greene Lane, White Plains, NY",
     MOBILE: "+1 212 555 1212",
     EMAIL: "info@kasheesh.co"
   },
-  SUBSCRIBE_NEWSLETTER: "Subscribe newsletter",
+  SUBSCRIBE_NEWSLETTER: "Subscribe to our newsletter",
   SUBSCRIBE: "Subscribe"
 };
 

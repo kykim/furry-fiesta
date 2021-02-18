@@ -38,7 +38,7 @@
 
   .title::before {
     content: "";
-    background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    background: linear-gradient(90deg, #79c2af 0%, #79f8af 100%);
     height: 5px;
     width: 200px;
     margin-left: auto;
@@ -49,7 +49,7 @@
 
   .title::after {
     content: "";
-    background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    background: linear-gradient(90deg, #79c2af 0%, #79f8af 100%);
     height: 10px;
     width: 50px;
     margin-left: auto;
