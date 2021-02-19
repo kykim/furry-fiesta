@@ -15,4 +15,4 @@
 
 <h1>Dashboard</h1>
 <button on:click={() => logout()}>Logout</button>
-
+<div id="dump">{JSON.stringify($userInfo)}</div>
