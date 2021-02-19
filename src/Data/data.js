@@ -7,6 +7,12 @@ const NAVBAR_DATA = [
   { id: 4, url: "#footer", label: "Contact" }
 ];
 
+const DASHBOARD_NAVBAR_DATA = [
+  { id: 1, url: "#", label: "Home" },
+  { id: 2, url: "#/activity", label: "Activity" },
+  { id: 3, url: "#/services", label: "Account Services" },
+];
+
 const BANNER_DATA = {
   HEADING: "Maximize your credit",
   DECRIPTION:
@@ -96,6 +102,7 @@ const FOOTER_DATA = {
 const MOCK_DATA = {
   HEADER,
   NAVBAR_DATA,
+  DASHBOARD_NAVBAR_DATA,
   BANNER_DATA,
   SERVICE_DATA,
   ABOUT_DATA,

@@ -10,9 +10,6 @@
   const { HEADING, ADDRESS, MOBILE, EMAIL } = CONTACT_DETAILS;
 </script>
 
-<!------------------------------------------->
-<!----------------MARKUP----------------------->
-<!------------------------------------------->
 <section class="main-bgcolor light-color" id="footer">
   <img src="images/wave2.png" alt="" class="wave-img" />
   <div class="container">
@@ -49,9 +46,7 @@
     </div>
   </div>
 </section>
-<!------------------------------------------->
-<!----------------Style----------------------->
-<!------------------------------------------->
+
 <style>
   .footer-title {
     font-weight: bold;

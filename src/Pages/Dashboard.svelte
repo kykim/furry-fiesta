@@ -7,6 +7,10 @@
   import Services from '../Components/Dashboard/Services.svelte'
   import NotFound from '../Components/Dashboard/NotFound.svelte'
 
+  import Navbar from "../Components/Navbar/Navbar.svelte";
+  import Footer from "../Components/Footer/Footer.svelte";
+  import DATA from "../Data/data";
+
   // the route definition object
   const routes = { 
       '/': Root,
@@ -28,16 +32,23 @@
   } = getAuth();
 </script>
 
-<h1>Dashboard</h1>
+<Navbar navlists={DATA.DASHBOARD_NAVBAR_DATA} header={DATA.HEADER} />
+<section class="main-bgcolor">
+     <img src="images/wave1.png" alt="" class="wave-img" />
+</section>
 
-<ul>
-    <li><a href="#/">Home</a></li>
-    <li><a href="#/activity">Activity</a></li>
-    <li><a href="#/services">Account Services</a></li>
-    <li><a href="#/does/not/exist">Not found</a></li>
-</ul>
-<button on:click={() => logout()}>Logout</button>
+<section class="section container-fluid min-vh-100">
+  <Router {routes} />
+</section>
 
-<Router {routes} />
+<div class="grey-bgcolor" id="dump">{JSON.stringify($userInfo)}</div>
 
-<div id="dump">{JSON.stringify($userInfo)}</div>
+<Footer footerData={DATA.FOOTER_DATA} header={DATA.HEADER} />
+
+
+<style>
+  .wave-img {
+    width: 100%;
+    height: auto;
+  }
+</style>  

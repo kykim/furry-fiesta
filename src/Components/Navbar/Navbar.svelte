@@ -40,12 +40,18 @@
             <a class="nav-link light-color" href={list.url}>{list.label}</a>
           </li>
         {/each}
-        <li class="nav-item">
-          <button class="btn btn-primary" on:click={() => signup()}>Signup</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn btn-info" on:click={() => login()}>Login</button>
-        </li>
+        {#if $isAuthenticated}
+          <li class="nav-item">
+            <button class="btn btn-primary" on:click={() => logout()}>Logout</button>
+          </li>
+        {:else}
+          <li class="nav-item">
+            <button class="btn btn-primary" on:click={() => signup()}>Signup</button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-info" on:click={() => login()}>Login</button>
+          </li>
+        {/if}
       </ul>
     </div>
   </nav>
