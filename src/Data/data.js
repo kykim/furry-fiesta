@@ -3,7 +3,6 @@ const HEADER = "Kasheesh";
 const NAVBAR_DATA = [
   { id: 1, url: "#services", label: "Services" },
   { id: 2, url: "#about-us", label: "About" },
-  { id: 3, url: "#testimonials", label: "Testimonials" },
   { id: 4, url: "#footer", label: "Contact" }
 ];
 
@@ -52,34 +51,6 @@ const ABOUT_DATA = {
   ]
 };
 
-const TESTIMONIAL_DATA = {
-  HEADING: "What do clients say?",
-  TESTIMONIAL_LIST: [
-    {
-      DESCRIPTION:
-        "Kasheesh has made a huge difference to my ability to shop online. I'm able to use all my credit cards to get the goods I need. Thank goodness for Kasheesh.",
-      IMAGE_URL: "images/user1.jpg",
-      NAME: "Julia Hawkins",
-    },
-    {
-      DESCRIPTION:
-        "Kasheesh made it easy to use all my credit cards at once to buy the high ticket items I needed right away. No messy applications. Fast, easy and simple.",
-      IMAGE_URL: "images/user2.jpg",
-      NAME: "John Smith",
-    }
-  ]
-};
-
-const SOCIAL_DATA = {
-  HEADING: "Find us on social media",
-  IMAGES_LIST: [
-    "images/facebook-icon.png",
-    "images/instagram-icon.png",
-    "images/twitter-icon.png",
-    "images/snapchat-icon.png"
-  ]
-};
-
 const FOOTER_DATA = {
   DESCRIPTION:
     "We are focused on letting you, our customer, spend the credit you already have in your wallet.",
@@ -99,8 +70,6 @@ const MOCK_DATA = {
   BANNER_DATA,
   SERVICE_DATA,
   ABOUT_DATA,
-  TESTIMONIAL_DATA,
-  SOCIAL_DATA,
   FOOTER_DATA
 };
 export default MOCK_DATA;
