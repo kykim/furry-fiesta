@@ -12,8 +12,8 @@
 <!-- Banner -->
 <Banner bannerData={DATA.BANNER_DATA} />
 <!-- Services -->
-<Services serviceData={DATA.SERVICE_DATA} />
+<!-- <Services serviceData={DATA.SERVICE_DATA} /> -->
 <!-- About -->
-<About aboutData={DATA.ABOUT_DATA} />
+<!-- <About aboutData={DATA.ABOUT_DATA} /> -->
 <!-- Footer -->
 <Footer footerData={DATA.FOOTER_DATA} header={DATA.HEADER} />
