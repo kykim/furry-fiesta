@@ -21,6 +21,7 @@
         <div class="company_brand">{header}</div>
         <p>{DESCRIPTION}</p>
       </div>
+      <div class="col-md-4 footer-box"></div>
       <div class="col-md-4 footer-box">
         <p class="footer-title">{HEADING}</p>
         <p>
@@ -35,16 +36,6 @@
           <i class="fas fa-envelope" />
           {EMAIL}
         </p>
-      </div>
-      <div class="col-md-4 footer-box">
-        <p class="footer-title">{SUBSCRIBE_NEWSLETTER}</p>
-        <input
-          type="email"
-          class="form-control round-border"
-          placeholder="Your Email" />
-        <button type="button" class="btn btn-outline-light round-border">
-          {SUBSCRIBE}
-        </button>
       </div>
     </div>
   </div>

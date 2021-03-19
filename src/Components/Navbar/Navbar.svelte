@@ -1,18 +1,5 @@
 <script>
   export let navlists = [];
-
-  import { getAuth } from '../../auth';
-  
-  const {
-    isLoading,
-    isAuthenticated,
-    signup,
-    login,
-    logout,
-    authToken,
-    authError,
-    userInfo
-  } = getAuth();
 </script>
 
 <section id="nav-bar">
@@ -41,10 +28,7 @@
           </li>
         {/each}
         <li class="nav-item">
-          <button class="btn btn-primary" on:click={() => signup()}>Signup</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn btn-info" on:click={() => login()}>Login</button>
+          <a class="btn btn-primary" href="https://docs.google.com/forms/d/1mEaInZF1YXEifeyWPocx1AKYxYMQ9Jr7FzOl96ka0X4">Signup</a>
         </li>
       </ul>
     </div>
