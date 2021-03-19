@@ -6,7 +6,7 @@
   <nav class="navbar main-bgcolor navbar-expand-md navbar-dark">
     <a class="navbar-brand company_brand" href="/">
       <img class="navbar-img" src="images/kasheesh.png" alt="logo" />
-      KASHEESH
+      Kasheesh!
     </a>
     
     <button
@@ -38,6 +38,19 @@
 </section>
 
 <style>
+  @font-face {
+    font-family: 'Cooper Black';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/CooperBlack.otf');
+  }
+
+  .company_brand {
+    font-family: 'Cooper Black', 'Capriola', sans-serif !important;
+    font-size: 2.0rem !important;
+    font-weight: 500;
+  }
+
   #nav-bar {
     position: sticky;
     top: 0;
