@@ -22,11 +22,13 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
+        <!--
         {#each navlists as list}
           <li class="nav-item">
             <a class="nav-link light-color" href={list.url}>{list.label}</a>
           </li>
         {/each}
+        -->
         <li class="nav-item">
           <a class="btn btn-primary" href="https://docs.google.com/forms/d/1mEaInZF1YXEifeyWPocx1AKYxYMQ9Jr7FzOl96ka0X4">Signup</a>
         </li>
